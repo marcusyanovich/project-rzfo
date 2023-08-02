@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+  <base href="[(site_url)]">
+	<link rel="canonical" href="[(site_url)][!if? &is=`[*id*]:eq:1` &then=`` &else=`[~[*id*]~]` !]">
+  <title>Лаборатория</title>
+  <meta name="description" lang="ru" content="">
+  <meta name="keywords" lang="ru" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#FF6600">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/mobile.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+</head>
+<body>
+
+  <header class="header">
+    <div class="uk-container uk-container-large">
+      <div data-uk-grid class="uk-flex-middle uk-flex-between">
+        <div>
+          <div class="header_logo">
+            <a href="/">
+              <img src="img/logo.png" alt="RZFO">
+            </a>
+          </div>
+        </div>
+        <div class="uk-visible@m">
+          <nav class="topmenu">
+            <ul class="uk-navbar-nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+              <li class="current">
+                <meta itemprop="name" content="Каталог">
+                <a href="#" itemprop="url">Каталог</a>
+              </li>
+              <li>
+                <meta itemprop="name" content="О фильтрах">
+                <a href="#" itemprop="url">О фильтрах</a>
+              </li>
+              <li>
+                <meta itemprop="name" content="О компании">
+                <a href="#" itemprop="url">О компании</a>
+              </li>
+              <li>
+                <meta itemprop="name" content="Новости">
+                <a href="#" itemprop="url">Новости</a>
+              </li>
+              <li>
+                <meta itemprop="name" content="Контакты">
+                <a href="#" itemprop="url">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <div data-uk-grid class="uk-flex-middle uk-grid-medium">
+            <div class="uk-visible@l">
+              <div class="header__search">
+                <form>
+                  <input type="text" name="search" placeholder="Поиск по каталогу">
+                  <button type="submit"></button>
+                </form>
+              </div>
+            </div>
+            <div>
+              <a href="#modal-call" data-uk-toggle class="header__btn-call">Позвоните мне!</a>
+            </div>
+            <div class="uk-visible@s">
+              <div class="header__phone">
+                <a href="tel:8 (800) 000-00-00">8 (800) 000-00-00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-hidden@m">
+          <a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+        </div>
+        <div class="uk-hidden@l uk-width-1-1">
+          <div class="header__search">
+            <form>
+              <input type="text" name="search" placeholder="Поиск по каталогу">
+              <button type="submit"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+	<!-- OFFCANVAS -->
+	<div id="offcanvas-nav" data-uk-offcanvas="overlay:true">
+		<div class="uk-offcanvas-bar">
+			<button class="uk-offcanvas-close uk-close-large" type="button" data-uk-close></button>
+			<ul class="uk-nav">
+				<li>
+          <a href="#">Каталог</a>
+          <ul>
+            <li><a href="#">Воздушные фильтры</a></li>
+            <li><a href="#">Гидравлические фильтры</a></li>
+            <li><a href="#">Кабинные фильтры</a></li>
+          </ul>
+        </li>
+        <li><a href="#">О фильтрах</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Контакты</a></li>
+			</ul>
+
+			<div class="left-cont-block">
+				<div class="left-phone">
+					<a href="tel:+79281344131">+7 928 134-41-31</a>
+				</div>
+				<div class="left-email">
+					<a href="mailto:rzfoinfo@yandex.ru">rzfoinfo@yandex.ru</a>
+				</div>
+        <div class="left-soc">
+          <a href="#" target="_blank" rel="nofollow noopener" class="left-soc-vk"></a>
+          <a href="#" target="_blank" rel="nofollow noopener" class="left-soc-yt"></a>
+        </div>
+			</div>
+
+		</div>
+	</div>
+	<!-- /OFFCANVAS -->
+
+	<main class="content__lab">
+		<div class="uk-container uk-container-large">
+
+			<div class="content__about-logo"></div>
+			<h1 class="title uk-width-1-1 uk-width-2-3@l">Собственная лаборатория</h1>
+			<div class="content__about-text">Даже лучшая бумага для фильтров от&nbsp;проверенных поставщиков проверяется на&nbsp;нескольких стендах, чтобы определить важнейшие показатели фильтрующего материала</div>
+
+      <div class="about__lab">
+        <div class="about__lab-title">О нашей инженерной лаборатории</div>
+
+        <div class="about__lab-item">
+          <div class="about__lab-item-title">Тестер воздухопроницаемости фильтровальной бумаги</div>
+          <div data-uk-grid class="uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle">
+            <div>
+              <div class="about__lab-item-text">
+                <p><strong>Проверяет проницаемость различных тканей и&nbsp;других материалов</strong> по&nbsp;принципу всасывания потока воздуха с&nbsp;возможностью регулирования давления.</p>
+                <p>Исследование <strong>позволяет правильно подобрать необходимый материал</strong> для фильтрующих элементов в&nbsp;различных условиях эксплуатации.</p>
+                <ul>
+                  <li>Испытательный диапазон воздухопроницаемости: 0,2-11834 мм/с / (л/м2/с);</li>
+                  <li>Единицы измерения: мм/с, л/м2/с, л/дм2/с, см3/см2/с, кубический фут/м (cfm), м3/м2/мин;</li>
+                  <li>Погрешность измерения перепада давления: ±2% от результатов выведенных на дисплей;</li>
+                  <li>Диапазон испытательного давления: 0-300 Па;</li>
+                  <li>Испытательная область/диаметр: 20см2, φ70mm (38,5см2);</li>
+                  <li>Размер сопла в регулировочном дросселе: φ0,8, φ1,2, φ2, φ3, φ4, φ6, φ8, φ10, φ12, φ16, φ20;</li>
+                  <li>Источник питания: 220 В ± 10%, 50 Гц;</li>
+                  <li>Объём воздуха: 120 м3/ч.</li>
+                </ul>
+              </div>
+              <div class="about__lab-item-gost">ГОСТ ISO 9237-2013. «Метод определения воздухопроницаемости»</div>
+            </div>
+            <div>
+              <div class="about__lab-item-img">
+                <img data-src="img/img_lab1.jpg" alt="" class="lazyload" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__lab-item">
+          <div class="about__lab-item-title">Тестер разрыва фильтровальной бумаги</div>
+          <div data-uk-grid class="uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle">
+            <div>
+              <div class="about__lab-item-text">
+                <p>Создаёт плавно нарастающее гидравлическое давление, которое действует через резиновую диафрагму на поверхность одной стороны зажатого по кольцу образца до его деформации.</p>
+                <p>Исследование <strong>позволяет правильно подобрать материал для фильтрующих элементов</strong> эксплуатируемых в различных условиях.</p>
+                  
+                <ul>
+                  <li>Диапазон измерения: 70-1400 кПа;</li>
+                  <li>Разрешающая способность: 1 кПа;</li>
+                  <li>Пределы допускаемой приведенной погрешности измерения давления: ±0,5%;</li>
+                  <li>Скорость давления прокачивания жидкости в нагнетательном насосе: 95,5 мл/мин;</li>
+                  <li>Давление зажима образца: до 430 кПа.</li>
+                </ul>
+              </div>
+              <div class="about__lab-item-gost">ГОСТ Р ISO 2758-2017. «Метод определения сопротивления продавливанию»</div>
+            </div>
+            <div>
+              <div class="about__lab-item-img">
+                <img data-src="img/img_lab2.jpg" alt="" class="lazyload" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__lab-item">
+          <div class="about__lab-item-title">Прибор для измерения размера пор фильтровальной бумаги</div>
+          <div data-uk-grid class="uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle">
+            <div>
+              <div class="about__lab-item-text">
+                <p>Пропускает воздух через поры испытуемого материала
+                  смачиваемого жидкостью, вытесняя её чреез наибольшие поры. <strong>Средний размер пор рассчитывается с использованием известного поверхностного натяжения смачивающей жидкости</strong> (Изопропиловый спирт абсолютированный ГОСТ 9805-84).</p>
+                <p>Исследование <strong>позволяет правильно определить микронаж фильтровального материала</strong> и подобрать его под индивидуальные запросы.</p>                  
+                  
+                <ul>
+                  <li>Давление воздуха: 0-15 кПа;</li>
+                  <li>Скорость герметизации: 2-2,5 кПа/мин;</li>
+                  <li>Погрешность измерения перепада давления: ±1%;</li>
+                  <li>Разрешающая способность: 1Па;</li>
+                  <li>Разрешение апертуры: 1мкм;</li>
+                  <li>Толщина испытательного образца: 0,10-3,5 мм;</li>
+                  <li>Испытательная эффективная площадь: 20±0,5 см2;</li>
+                  <li>Диаметр испытуемого образца 88±0,5 мм;</li>
+                  <li>Объём газового баллона 2,5л.</li>
+                </ul>
+              </div>
+              <div class="about__lab-item-gost">ГОСТ 21956-88</div>
+            </div>
+            <div>
+              <div class="about__lab-item-img">
+                <img data-src="img/img_lab3.jpg" alt="" class="lazyload" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+			
+
+			<div class="lab__bottom-info">
+        <div data-uk-grid class="uk-child-width-1-1 uk-child-width-1-2@s uk-flex-middle">
+          <div>
+            <h2 class="blocktitle">Лучшие решения, технологии и&nbsp;инновации отрасли</h2>
+            <div class="lab__bottom-info-text">
+              <p>Лабораторные испытания позволяют подобрать качественный материал, соответствующий заявленным техническим характеристиками выпускаемой продукции на уровне ведущих производителей фильтровального оборудования</p>
+              <p>Входной контроль поступающих материалов перед производством оборудования гарантирует заявленные поставщиком эксплуатационные свойства и позволяет выпускать качественные продукты бренда ООО «РЗФО».</p>
+              <p>Наличие сертифицированной лаборатории также позволяет нам проводить сравнительный анализ новых брендов на рынке РФ и качества их продукции.</p>						
+            </div>
+          </div>
+          <div>
+            <div class="lab__bottom-info-img">
+              <img data-src="img/about_bottom-img.png" alt="" class="lazyload" loading="lazy">
+            </div>
+          </div>
+        </div>
+			</div>
+
+		</div>
+	</main>
+
+	<section class="novinki">
+		<div class="uk-container uk-container-large">
+		  <h2 class="blocktitle">Новинки</h2>
+	
+		  <div data-uk-grid class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m">
+			<div>
+			  <a href="#" class="cat__item">
+				<div class="cat__item-metka cat_item-metka-new"></div>
+				<div class="cat__item-img uk-flex uk-flex-center uk-flex-middle">
+				  <img data-src="img/RZA628280.png" alt="" class="lazyload" loading="lazy">
+				</div>
+				<div class="cat__item-bottom">
+				  <div class="cat__item-title">RZA628280 + RZA628280-01</div>
+				  <div class="cat__item-text">
+					Воздушный (комплект)<br>
+					Применяемость: комбайн Палессе (новый)
+				  </div>
+				  <div class="cat__item-more">Подробнее</div>
+				</div>
+			  </a>
+			</div>
+			<div>
+			  <a href="#" class="cat__item">
+				<div class="cat__item-metka cat_item-metka-new"></div>
+				<div class="cat__item-img uk-flex uk-flex-center uk-flex-middle">
+				  <img data-src="img/RZA480250.png" alt="" class="lazyload" loading="lazy">
+				</div>
+				<div class="cat__item-bottom">
+				  <div class="cat__item-title">RZA480250</div>
+				  <div class="cat__item-text">
+					Воздушный (внешний)<br>
+					Применяемость: DAF XF105 Euro 6 (с 2018г), XF106
+				  </div>
+				  <div class="cat__item-more">Подробнее</div>
+				</div>
+			  </a>
+			</div>
+			<div>
+			  <a href="#" class="cat__item">
+				<div class="cat__item-metka cat_item-metka-new"></div>
+				<div class="cat__item-img uk-flex uk-flex-center uk-flex-middle">
+				  <img data-src="img/RZA511268.png" alt="" class="lazyload" loading="lazy">
+				</div>
+				<div class="cat__item-bottom">
+				  <div class="cat__item-title">RZA511268</div>
+				  <div class="cat__item-text">
+					Воздушный (внешний)<br>
+					Применяемость: грузовой автомобиль MAN TGA
+				  </div>
+				  <div class="cat__item-more">Подробнее</div>
+				</div>
+			  </a>
+			</div>
+		  </div>
+	
+		  <div>
+			<a href="#" class="cat__more"><span>В каталог</span></a>
+		  </div>
+	
+		</div>
+	  </section>
+
+  
+
+  <footer class="footer">
+    <div class="uk-container uk-container-large">
+      <div data-uk-grid class="uk-flex-between uk-child-width-auto">
+        <div class="uk-width-auto uk-width-1-4@m uk-width-auto@xl">
+          <div class="footer__logo">
+            <img data-src="img/logo_white.png" alt="RZFO" class="lazyload" loading="lazy">
+          </div>
+        </div>
+        <div class="uk-width-auto uk-width-2-4@m uk-width-auto@xl">
+          <nav class="footer__menu">
+            <div data-uk-grid>
+              <div>
+                <ul>
+                  <li>
+                    <a href="#">Каталог</a>
+                    <ul class="footer__menu-dop">                  
+                      <li><a href="#">Воздушные фильтры</a></li>
+                      <li><a href="#">Гидравлические фильтры</a></li>
+                      <li><a href="#">Кабинные фильтры</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#">О фильтрах</a></li>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="uk-width-auto uk-width-2-5@m uk-width-auto@xl">
+          <div class="footer__name">ООО «Ростовский завод фильтровального оборудования»</div>
+          <div class="footer__address">346812, Ростовская&nbsp;обл., Мясниковский&nbsp;р-он, с.&nbsp;Крым, ул.&nbsp;5-я линия,&nbsp;1, пом.&nbsp;103</div>
+          <div class="footer__conts">
+            <div data-uk-grid class="uk-grid-small">
+              <div>
+                <div class="footer__phone">
+                  <a href="tel:+79281344131">+7 928 134-41-31</a>
+                </div>
+              </div>
+              <div>
+                <div class="footer__email">
+                  <a href="mailto:rzfoinfo@yandex.ru">rzfoinfo@yandex.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__soc">
+            <a href="#" class="footer__soc-vk" target="_blank" rel="nofollow noopener"></a>
+            <a href="#" class="footer__soc-yt" target="_blank" rel="nofollow noopener"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "[(site_name)]",
+  "image" : "[(site_url)]img/logo.png",
+  "priceRange" : "30-10000RUB",
+  "telephone" : [ "[(g_phone)]", "[(g_phone2)]" ],
+  "email" : [ "[(g_email)]" ],
+  "address" : {
+    "@type" : "PostalAddress",
+    "streetAddress" : "[(g_address)]",
+    "addressLocality" : "[(g_city)]",
+    "addressRegion" : "[(g_region)]",
+    "postalCode" : "[(g_indeks)]"
+  },
+  "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ],
+  "url" : "[(site_url)]"
+}
+</script>
+
+<a href="#" class="scrollup" aria-label="Наверх">Наверх</a>
+  <script src="js/modernizr.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script>
+    jQuery(function($){
+      $(".phonemask").mask("+7 (999) 999-99-99");
+    });
+  </script>
+  <!--Скролл-->
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('.scrollup').fadeIn();
+        } else {
+          $('.scrollup').fadeOut();
+        }
+      });
+      
+      $('.scrollup').click(function () {
+        $("html, body").animate({
+          scrollTop: 0
+        }, 600);
+        return false;
+      });
+      
+    });
+  </script>
+	<script src="js/formochki.js"></script>
+
+	<script>
+	(async () => { 
+	    if ('loading' in HTMLImageElement.prototype) { 
+	        const images = document.querySelectorAll("img.lazyload"); 
+	        images.forEach(img => { 
+	            img.src = img.dataset.src; 
+	        }); 
+	    } else { 
+	        // Динамически импортируем библиотеку LazySizes 
+	        const lazySizesLib = await import('/js/lazysizes.min.js'); 
+	        // Инициализируем LazySizes (читаем data-src & class=lazyload) 
+	        lazySizes.init(); // lazySizes применяется при обработке изображений, находящихся на странице. 
+	    } 
+	})(); 
+	</script>
+
+</body>	
+</html>

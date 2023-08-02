@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+  <base href="[(site_url)]">
+	<link rel="canonical" href="[(site_url)][!if? &is=`[*id*]:eq:1` &then=`` &else=`[~[*id*]~]` !]">
+  <title>Главная</title>
+  <meta name="description" lang="ru" content="">
+  <meta name="keywords" lang="ru" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#FF6600">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/mobile.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+</head>
+<body>
+
+  <header class="header">
+    <div class="uk-container uk-container-large">
+      <div data-uk-grid class="uk-flex-middle uk-flex-between">
+        <div>
+          <div class="header_logo">
+            <a href="/">
+              <img src="img/logo.png" alt="RZFO">
+            </a>
+          </div>
+        </div>
+        <div class="uk-visible@m">
+          <nav class="topmenu">
+            <ul class="uk-navbar-nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+              <li class="current">
+                <meta itemprop="name" content="Каталог">
+                <a href="#" itemprop="url">Каталог</a>
+              </li>
+              <li>
+                <meta itemprop="name" content="О фильтрах">
+                <a href="#" itemprop="url">О фильтрах</a>
+              </li>
+              <li>
+                <meta itemprop="name" content="О компании">
+                <a href="#" itemprop="url">О компании</a>
+              </li>
+              <li>
+                <meta itemprop="name" content="Новости">
+                <a href="#" itemprop="url">Новости</a>
+              </li>
+              <li>
+                <meta itemprop="name" content="Контакты">
+                <a href="#" itemprop="url">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <div data-uk-grid class="uk-flex-middle uk-grid-large">
+            <div>
+              <a href="#modal-call" data-uk-toggle class="header__btn-call">Позвоните мне!</a>
+            </div>
+            <div class="uk-visible@s">
+              <div class="header__phone">
+                <a href="tel:8 (800) 000-00-00">8 (800) 000-00-00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-hidden@m">
+          <a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+	<!-- OFFCANVAS -->
+	<div id="offcanvas-nav" data-uk-offcanvas="overlay:true">
+		<div class="uk-offcanvas-bar">
+			<button class="uk-offcanvas-close uk-close-large" type="button" data-uk-close></button>
+			<ul class="uk-nav">
+				<li>
+          <a href="#">Каталог</a>
+          <ul>
+            <li><a href="#">Воздушные фильтры</a></li>
+            <li><a href="#">Гидравлические фильтры</a></li>
+            <li><a href="#">Кабинные фильтры</a></li>
+          </ul>
+        </li>
+        <li><a href="#">О фильтрах</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Контакты</a></li>
+			</ul>
+
+			<div class="left-cont-block">
+				<div class="left-phone">
+					<a href="tel:+79281344131">+7 928 134-41-31</a>
+				</div>
+				<div class="left-email">
+					<a href="mailto:rzfoinfo@yandex.ru">rzfoinfo@yandex.ru</a>
+				</div>
+        <div class="left-soc">
+          <a href="#" target="_blank" rel="nofollow noopener" class="left-soc-vk"></a>
+          <a href="#" target="_blank" rel="nofollow noopener" class="left-soc-yt"></a>
+        </div>
+			</div>
+
+		</div>
+	</div>
+	<!-- /OFFCANVAS -->
+
+  <div class="slider">
+    <div data-uk-slideshow="animation: push; ratio: 1920:708">
+
+      <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1">
+
+          <ul class="uk-slideshow-items">
+              <li>
+                <div class="uk-container uk-container-large slider__container">
+                  <div class="uk-width-1-1 uk-width-2-3@s uk-width-1-2@m">
+                    <div class="slider__title">Ростовский завод фильтровального оборудования</div>
+                    <div class="slider__text uk-width-2-3">Одно из&nbsp;ведущих предприятий с&nbsp;собственным конструкторским бюро и&nbsp;современным производственным оборудованием</div>
+                  </div>
+                </div>
+                <img data-src="img/slide1.jpg" alt="" class="lazyload" loading="lazy" data-uk-cover>
+              </li>
+              <li>
+                <div class="uk-container uk-container-large slider__container">
+                  <div class="uk-width-1-1 uk-width-2-3@s uk-width-1-2@m">
+                    <div class="slider__title">Ростовский завод фильтровального оборудования</div>
+                    <div class="slider__text uk-width-2-3">РЗФО&nbsp;&mdash; предприятие, которое оснащено современным производственным оборудованием, имеет собственную сертифицированную лабораторию и&nbsp;конструкторское бюро.</div>
+                  </div>
+                </div>
+                <img data-src="img/slide2.jpg" alt="" data-uk-cover class="lazyload" loading="lazy">
+              </li>
+              <li>
+                <div class="uk-container uk-container-large slider__container">
+                  <div class="uk-width-1-1 uk-width-2-3@s uk-width-1-2@m">
+                    <div class="slider__title">Ростовский завод фильтровального оборудования</div>
+                    <div class="slider__text uk-width-2-3">Одно из&nbsp;ведущих предприятий с&nbsp;собственным конструкторским бюро и&nbsp;современным производственным оборудованием</div>
+                  </div>
+                </div>
+                <img data-src="img/slide3.jpg" alt="" data-uk-cover class="lazyload" loading="lazy">
+              </li>
+          </ul>
+
+      </div>
+
+      <div class="slider__nav uk-position-bottom">
+        <div class="slider__nav-inner">
+          <a class="uk-position-center-left uk-position-small" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
+          <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+          <a class="uk-position-center-right uk-position-small" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="catalog">
+    <div class="uk-container uk-container-large">
+      <h2 class="blocktitle">Каталог</h2>
+
+      <div data-uk-grid class="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@s catalog__grid">
+        <div>
+          <a href="#" class="catalog__cat">
+            <div class="uk-flex uk-flex-between uk-flex-column catalog__cat-block">
+              <div class="catalog__cat-title uk-width-1-1 uk-width-1-3@l">Гидравлические фильтры</div>
+              <div class="catalog__cat-more"><span>В каталог</span></div>
+            </div>
+            <div class="catalog__cat-img">
+              <img data-src="img/cat1.png" alt="" class="lazyload" loading="lazy">
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="catalog__cat">
+            <div class="uk-flex uk-flex-between uk-flex-column catalog__cat-block">
+              <div class="catalog__cat-title uk-width-1-1 uk-width-1-3@l">Фильтры кабины</div>
+              <div class="catalog__cat-more"><span>В каталог</span></div>
+            </div>
+            <div class="catalog__cat-img">
+              <img data-src="img/cat2.png" alt="" class="lazyload" loading="lazy">
+            </div>
+          </a>
+        </div>
+        <div class="uk-width-1-1">
+          <a href="#" class="catalog__cat">
+            <div class="uk-flex uk-flex-between uk-flex-column catalog__cat-block">
+              <div class="catalog__cat-title uk-width-1-1 uk-width-1-3@m uk-width-1-1@l">Воздушные фильтры</div>
+              <div class="catalog__cat-more"><span>В каталог</span></div>
+            </div>
+            <div class="catalog__cat-img">
+              <img data-src="img/cat3.png" alt="" class="lazyload" loading="lazy">
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="uk-container uk-container-large">
+      <h2 class="blocktitle">О нашей продукции</h2>
+
+      <div class="about__filters">
+        <ul class="uk-subnav uk-subnav-pill uk-width-1-1 uk-width-1-2@s uk-width-1-1@m" data-uk-switcher>
+          <li><a href="#">Воздушные фильтры</a></li>
+          <li><a href="#">Гидравлические фильтры</a></li>
+          <li><a href="#">Фильтры кабины</a></li>
+        </ul>
+        
+        <ul class="uk-switcher uk-margin">
+            <li>
+              <div class="about__filters-img">
+                <img data-src="img/about_img.png" alt="" class="lazyload" loading="lazy">
+              </div>
+              <div class="about__filters-text uk-width-1-1 uk-width-1-2@s uk-width-1-3@m">
+                Эффективность очистки воздушных фильтров RZFO достигает 99,98%&nbsp;&mdash; показателя аналогичных устройств, произведённых лидерами на&nbsp;мировом рынке.
+              </div>
+              <div class="about__filters-preim">
+                <div data-uk-grid class="uk-grid-medium">
+                  <div>
+                    <div class="about__filters-preim-item fpi1">
+                      <div class="about__filters-preim-item-title">усовершенствованная <br>поверхность гофры</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="about__filters-preim-item fpi2">
+                      <div class="about__filters-preim-item-title">улучшенный состав <br>фильтровальной бумаги</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="about__filters-img">
+                <img data-src="img/about_img2.png" alt="" class="lazyload" loading="lazy">
+              </div>
+              <div class="about__filters-text uk-width-1-1 uk-width-1-2@s uk-width-1-3@m">
+                Параметры материалов по&nbsp;качеству соответствуют или превосходят параметры именитых зарубежных производителей.
+              </div>
+              <div class="about__filters-preim">
+                <div data-uk-grid class="uk-grid-medium">
+                  <div>
+                    <div class="about__filters-preim-item fpi1">
+                      <div class="about__filters-preim-item-title">стойкие к&nbsp;разрушению <br>пластиковые комплектующие</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="about__filters-preim-item fpi2">
+                      <div class="about__filters-preim-item-title">спиральная проклейка клеевыми <br>дорожками для дополнительного упрочнения</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="about__filters-img">
+                <img data-src="img/about_img.png" alt="" class="lazyload" loading="lazy">
+              </div>
+              <div class="about__filters-text uk-width-1-1 uk-width-1-2@s uk-width-1-3@m">
+                Эффективность очистки воздушных фильтров RZFO достигает 99,98% — показателя аналогичных устройств, произведённых лидерами на&nbsp;мировом рынке.
+              </div>
+              <div class="about__filters-preim">
+                <div data-uk-grid class="uk-grid-medium">
+                  <div>
+                    <div class="about__filters-preim-item fpi1">
+                      <div class="about__filters-preim-item-title">усовершенствованная <br>поверхность гофры</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="about__filters-preim-item fpi2">
+                      <div class="about__filters-preim-item-title">улучшенный состав <br>фильтровальной бумаги</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+        </ul>
+
+        <div class="about__bottom">
+          <ul class="uk-subnav uk-subnav-pill" data-uk-switcher>
+            <li><a href="#">Производство с нуля</a></li>
+            <li><a href="#">Производство по Вашему ТЗ</a></li>
+          </ul>
+          
+          <ul class="uk-switcher uk-margin">
+              <li>
+                <div class="about__steps">
+                  <div data-uk-grid class="uk-grid-large uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-child-width-auto@xl">
+                    <div>
+                      <div class="about__steps-item asi1">
+                        <div class="about__steps-item-icon"></div>
+                        <div class="about__steps-item-title">Образец отправляется на&nbsp;исследование <br>в&nbsp;сертифицированную лабораторию</div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="about__steps-item asi2">
+                        <div class="about__steps-item-icon"></div>
+                        <div class="about__steps-item-title">На&nbsp;основе полученных данных <br>разрабатывается технология производства</div>
+                      </div>                      
+                    </div>
+                    <div>
+                      <div class="about__steps-item asi3">
+                        <div class="about__steps-item-icon"></div>
+                        <div class="about__steps-item-title">Формируется заказ качественных <br>материалов</div>
+                      </div>                      
+                    </div>
+                    <div>
+                      <div class="about__steps-item asi4">
+                        <div class="about__steps-item-icon"></div>
+                        <div class="about__steps-item-title">Осуществляется сборка <br>собственных фильтров</div>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="about__steps">
+                  <div data-uk-grid class="uk-grid-large uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-child-width-auto@xl">
+                    <div>
+                      <div class="about__steps-item asi1">
+                        <div class="about__steps-item-icon"></div>
+                        <div class="about__steps-item-title">Образец отправляется на&nbsp;исследование <br>в&nbsp;сертифицированную лабораторию</div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="about__steps-item asi2">
+                        <div class="about__steps-item-icon"></div>
+                        <div class="about__steps-item-title">На&nbsp;основе полученных данных <br>разрабатывается технология производства</div>
+                      </div>                      
+                    </div>
+                    <div>
+                      <div class="about__steps-item asi3">
+                        <div class="about__steps-item-icon"></div>
+                        <div class="about__steps-item-title">Формируется заказ качественных <br>материалов</div>
+                      </div>                      
+                    </div>
+                    <div>
+                      <div class="about__steps-item asi4">
+                        <div class="about__steps-item-icon"></div>
+                        <div class="about__steps-item-title">Осуществляется сборка <br>собственных фильтров</div>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+              </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="novinki">
+    <div class="uk-container uk-container-large">
+      <h2 class="blocktitle">Новинки</h2>
+
+      <div data-uk-grid class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m">
+        <div>
+          <a href="#" class="cat__item">
+            <div class="cat__item-metka cat_item-metka-new"></div>
+            <div class="cat__item-img uk-flex uk-flex-center uk-flex-middle">
+              <img data-src="img/RZA628280.png" alt="" class="lazyload" loading="lazy">
+            </div>
+            <div class="cat__item-bottom">
+              <div class="cat__item-title">RZA628280 + RZA628280-01</div>
+              <div class="cat__item-text">
+                Воздушный (комплект)<br>
+                Применяемость: комбайн Палессе (новый)
+              </div>
+              <div class="cat__item-more">Подробнее</div>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="cat__item">
+            <div class="cat__item-metka cat_item-metka-new"></div>
+            <div class="cat__item-img uk-flex uk-flex-center uk-flex-middle">
+              <img data-src="img/RZA480250.png" alt="" class="lazyload" loading="lazy">
+            </div>
+            <div class="cat__item-bottom">
+              <div class="cat__item-title">RZA480250</div>
+              <div class="cat__item-text">
+                Воздушный (внешний)<br>
+                Применяемость: DAF XF105 Euro 6 (с 2018г), XF106
+              </div>
+              <div class="cat__item-more">Подробнее</div>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="cat__item">
+            <div class="cat__item-metka cat_item-metka-new"></div>
+            <div class="cat__item-img uk-flex uk-flex-center uk-flex-middle">
+              <img data-src="img/RZA511268.png" alt="" class="lazyload" loading="lazy">
+            </div>
+            <div class="cat__item-bottom">
+              <div class="cat__item-title">RZA511268</div>
+              <div class="cat__item-text">
+                Воздушный (внешний)<br>
+                Применяемость: грузовой автомобиль MAN TGA
+              </div>
+              <div class="cat__item-more">Подробнее</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <a href="#" class="cat__more"><span>В каталог</span></a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="uk-container uk-container-large">
+      <div data-uk-grid class="uk-flex-between uk-child-width-auto">
+        <div class="uk-width-auto uk-width-1-4@m uk-width-auto@xl">
+          <div class="footer__logo">
+            <img data-src="img/logo_white.png" alt="RZFO" class="lazyload" loading="lazy">
+          </div>
+        </div>
+        <div class="uk-width-auto uk-width-2-4@m uk-width-auto@xl">
+          <nav class="footer__menu">
+            <div data-uk-grid>
+              <div>
+                <ul>
+                  <li>
+                    <a href="#">Каталог</a>
+                    <ul class="footer__menu-dop">                  
+                      <li><a href="#">Воздушные фильтры</a></li>
+                      <li><a href="#">Гидравлические фильтры</a></li>
+                      <li><a href="#">Кабинные фильтры</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#">О фильтрах</a></li>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="uk-width-auto uk-width-2-5@m uk-width-auto@xl">
+          <div class="footer__name">ООО «Ростовский завод фильтровального оборудования»</div>
+          <div class="footer__address">346812, Ростовская&nbsp;обл., Мясниковский&nbsp;р-он, с.&nbsp;Крым, ул.&nbsp;5-я линия,&nbsp;1, пом.&nbsp;103</div>
+          <div class="footer__conts">
+            <div data-uk-grid class="uk-grid-small">
+              <div>
+                <div class="footer__phone">
+                  <a href="tel:+79281344131">+7 928 134-41-31</a>
+                </div>
+              </div>
+              <div>
+                <div class="footer__email">
+                  <a href="mailto:rzfoinfo@yandex.ru">rzfoinfo@yandex.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__soc">
+            <a href="#" class="footer__soc-vk" target="_blank" rel="nofollow noopener"></a>
+            <a href="#" class="footer__soc-yt" target="_blank" rel="nofollow noopener"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "[(site_name)]",
+  "image" : "[(site_url)]img/logo.png",
+  "priceRange" : "30-10000RUB",
+  "telephone" : [ "[(g_phone)]", "[(g_phone2)]" ],
+  "email" : [ "[(g_email)]" ],
+  "address" : {
+    "@type" : "PostalAddress",
+    "streetAddress" : "[(g_address)]",
+    "addressLocality" : "[(g_city)]",
+    "addressRegion" : "[(g_region)]",
+    "postalCode" : "[(g_indeks)]"
+  },
+  "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ],
+  "url" : "[(site_url)]"
+}
+</script>
+
+<a href="#" class="scrollup" aria-label="Наверх">Наверх</a>
+  <script src="js/modernizr.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    jQuery(function($){
+      $(".phonemask").mask("+7 (999) 999-99-99");
+    });
+  </script>
+  <!--Скролл-->
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('.scrollup').fadeIn();
+        } else {
+          $('.scrollup').fadeOut();
+        }
+      });
+      
+      $('.scrollup').click(function () {
+        $("html, body").animate({
+          scrollTop: 0
+        }, 600);
+        return false;
+      });
+      
+    });
+  </script>
+	<script src="js/formochki.js"></script>
+
+	<script>
+	(async () => { 
+	    if ('loading' in HTMLImageElement.prototype) { 
+	        const images = document.querySelectorAll("img.lazyload"); 
+	        images.forEach(img => { 
+	            img.src = img.dataset.src; 
+	        }); 
+	    } else { 
+	        // Динамически импортируем библиотеку LazySizes 
+	        const lazySizesLib = await import('/js/lazysizes.min.js'); 
+	        // Инициализируем LazySizes (читаем data-src & class=lazyload) 
+	        lazySizes.init(); // lazySizes применяется при обработке изображений, находящихся на странице. 
+	    } 
+	})(); 
+	</script>
+
+</body>	
+</html>
